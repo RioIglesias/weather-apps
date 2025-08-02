@@ -6,7 +6,7 @@
 
 ###
 
-<p align="left">A twitter project required for technical test. Through this project, there are some features that are listed below:<br><br>Users can predict the weather in their city or in the world.</p>
+<p align="left">A project required for technical test. Through this project, there are some features that are listed below:<br><br>Users can find out today's weather information in their city or in the world.</p>
 
 ###
 
