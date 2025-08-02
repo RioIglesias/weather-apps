@@ -51,9 +51,10 @@ class HomePage extends StatelessWidget {
                     alignment: Alignment.topCenter,
                     child: Column(
                       children: [
-                        TitleText(text: currentWeather.name),
+                        TitleText(text: currentWeather.name,),
                         TitleText(
-                          text: "${currentWeather.main.temp.toInt()}°C",
+                          text: "${currentWeather.main.temp.toInt()}°",
+                          size: SizeCustomize.setSp(90),
                         ),
                         SubText(
                           text:

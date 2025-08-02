@@ -58,25 +58,6 @@ class SizeCustomize {
   }
 
   static Widget spaceArea(double height) {
-    return SizedBox(
-      height: ScreenUtil().setHeight(height),
-    );
-  }
-  // static double lebarSeparator(BuildContext context, double percentage) {
-  //   return width(context) * percentage;
-  // }
-
-  // static double heightWithAppBar(BuildContext context, double percentage) {
-  //   return height() * percentage -
-  //       const CustomAppBar().preferredSize.height;
-  // }
-
-  static double calculateListViewHeight(int itemCount, double height) {
-    double itemHeight = height; // Sesuaikan dengan tinggi item
-    double totalHeight = itemCount * itemHeight;
-
-    totalHeight;
-
-    return totalHeight;
+    return SizedBox(height: ScreenUtil().setHeight(height));
   }
 }

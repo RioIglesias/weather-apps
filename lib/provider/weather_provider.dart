@@ -15,6 +15,7 @@ class WeatherProvider extends ChangeNotifier {
   CurrentWeatherModel? _result;
   CurrentWeatherModel? get result => _result;
 
+  // Function to get dew point
   double calculateDewPoint(double temperature, int humidity) {
     const a = 17.27;
     const b = 237.7;
@@ -25,6 +26,7 @@ class WeatherProvider extends ChangeNotifier {
     return dewPoint;
   }
 
+  // Call API weather
   Future<CurrentWeatherModel?> postData() async {
     loading = true;
     notifyListeners();

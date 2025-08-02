@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/helper/size_customize.dart';
 import 'package:weather_app/presentation/login_page/content/custom_login_form.dart';
-import 'package:weather_app/style/colors.dart';
 import 'package:weather_app/style/custom_text.dart';
 
 class LoginPage extends StatelessWidget {
@@ -10,7 +9,6 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor2,
       body: Stack(
         children: [
           SizedBox(

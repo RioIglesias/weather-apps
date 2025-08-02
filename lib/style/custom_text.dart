@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/helper/size_customize.dart';
-import 'package:weather_app/style/colors.dart';
 
 class TitleText extends StatelessWidget {
   final String text;
@@ -23,8 +22,8 @@ class TitleText extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        fontSize: size ?? 40,
-        color: colors ?? AppColors.subtextColor2,
+        fontSize: size ?? SizeCustomize.setSp(40),
+        color: colors ?? Colors.white,
         fontFamily: 'SFPRODISPLAY',
         fontWeight: weight ?? FontWeight.w500,
       ),

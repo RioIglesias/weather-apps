@@ -45,7 +45,10 @@ class _LoginFormState extends State<LoginForm> {
     return Consumer<WeatherProvider>(
       builder: (context, provider, child) {
         return Container(
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+          margin: EdgeInsets.symmetric(
+            horizontal: SizeCustomize.setSp(15),
+            vertical: SizeCustomize.setSp(30),
+          ),
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -91,7 +94,7 @@ class _LoginFormState extends State<LoginForm> {
                 ),
                 SizeCustomize.spaceArea(20),
                 CustomizeButton(
-                  widget: SubText(text: "Login", colors: Colors.white,),
+                  widget: SubText(text: "Login", colors: Colors.white),
                   width: SizeCustomize.widthScreen(),
                   function:
                       canPressButton()
